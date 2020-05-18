@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.new_contact.NewContactFragment"
+        android:background="@color/background">
+
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/ic_close_line"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/close_cd"/>
+
+        <TextView
+            android:id="@+id/new_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/close_button"
+            android:text="@string/name"
+            android:contentDescription="@string/new_name_cd"
+            android:labelFor="@id/new_name_edit"
+            style="@style/labelAppearance"/>
+
+        <EditText
+            android:id="@+id/new_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_name"
+            android:autofillHints="text"
+            android:inputType="text"
+            style="@style/editTextApperance"
+            />
+
+        <TextView
+            android:id="@+id/new_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_name_edit"
+            android:text="@string/phone_number"
+            android:contentDescription="@string/new_number_cd"
+            android:labelFor="@id/new_number_edit"
+            style="@style/labelAppearance"/>
+
+        <EditText
+            android:id="@+id/new_number_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_number"
+            android:autofillHints="number"
+            android:inputType="number"
+            style="@style/editTextApperance"
+            />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#FFF"
+            android:layout_margin="15dp"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/buttonAppearance"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

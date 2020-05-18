@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:fontFamily">@font/roboto</item>
+
+    </style>
+
+    <style name="labelAppearance">
+        <item name="android:textColor">@color/labelColor</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="editTextApperance">
+        <item name="android:textColor">@color/editTextColor</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="titleAppearance">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#4e4e4e</item>
+    </style>
+
+    <style name="buttonAppearance">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+</resources>
